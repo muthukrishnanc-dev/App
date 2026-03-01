@@ -1,0 +1,114 @@
+/*  */
+
+#Task_container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary-background);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main {
+  flex: 1;
+  display: flex;
+}
+
+main aside {
+  background-color: var(--Accent);
+  flex: 0 0 300px;
+}
+
+main article {
+  flex: 1;
+  position: relative;
+}
+
+aside {
+  padding: 20px;
+}
+.AddTask {
+  position: relative;
+}
+.AddTask input {
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.AddTask button {
+  position: absolute;
+  right: 40px;
+  top: 13px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#searchTask {
+  padding: 15px;
+}
+
+.active_tasks,
+.completed_tasks {
+  padding-left: 20px;
+}
+.greets {
+  color: var(--Text);
+  margin-bottom: 20px;
+}
+
+.greets h2 {
+  font-weight: 800;
+  line-height: 200%;
+}
+
+.greets h3 {
+  font-weight: 400;
+}
+
+.tasks_list {
+  overflow-y: scroll;
+  height: 430px;
+}
+
+.tasks {
+  padding: 20px;
+  background-color: var(--primary-background);
+  color: var(--Text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid;
+  margin-top: 5px;
+}
+
+.tasks > *:last-child {
+  display: flex;
+  gap: 10px;
+}
+
+.tasks > *:first-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--Accent);
+  width: 20px;
+  height: 20px;
+}
+
+.empty_state {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
