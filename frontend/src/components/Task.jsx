@@ -212,14 +212,6 @@ function Task({ userId, username, setUser, setDetails, user }) {
                 placeholder="Add Task here"
               />
             </label>
-            <label htmlFor="datetime">
-              start time:
-              <input
-                type="datetime-local"
-                name=""
-                id="datetime"
-              />
-            </label>
             <button
               onClick={handleSubmit}
               onKeyDown={(e) => {
